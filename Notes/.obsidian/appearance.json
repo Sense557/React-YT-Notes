@@ -2,5 +2,6 @@
   "cssTheme": "AnuPpuccin",
   "theme": "obsidian",
   "textFontFamily": "Comic Sans MS",
-  "baseFontSize": 22
+  "baseFontSize": 23,
+  "baseFontSizeAction": true
 }

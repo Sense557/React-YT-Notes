@@ -64,24 +64,25 @@ import it inside `App.jsx` & `main.jsx`
 #### App.jsx
 add some **Bootstrap** components as well and do some changes in list items as well
 ```JSX
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <h1>Healthy Foods</h1>;
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
+      <h1>Healthy Foods</h1>
+      <ul className="list-group">
+        <li className="list-group-item">Roti</li>
+        <li className="list-group-item">Dal</li>
+        <li className="list-group-item">Vegetables</li>
+        <li className="list-group-item">Milk</li>
+        <li className="list-group-item">Apple</li>
       </ul>
     </div>
   );
 }
-  
+
 export default App;
 ```
 

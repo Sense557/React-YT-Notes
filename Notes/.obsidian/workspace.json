@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ed8bc3460a69fd47",
@@ -156,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -167,19 +167,20 @@
   },
   "active": "ebbe4c086c2207d8",
   "lastOpenFiles": [
+    "Images/Pasted image 20241026083441.png",
+    "Images/Pasted image 20241026012014.png",
+    "Images/Pasted image 20241026005835.png",
+    "Images/Pasted image 20241026004256.png",
+    "Images/Pasted image 20241026003539.png",
+    "Images/Pasted image 20241026003255.png",
+    "Images/Pasted image 20241026001905.png",
+    "Images/Pasted image 20241025232128.png",
+    "Images/Pasted image 20241025225507.png",
+    "Images/Pasted image 20241025225334.png",
+    "Images/Pasted image 20241025225246.png",
     "React/Passing Functions via Props.md",
     "React/Managing State.md",
-    "Images/Pasted image 20241024094445.png",
-    "Images/Pasted image 20241024092440.png",
-    "Images/Pasted image 20241024092212.png",
     "React/Handling Events.md",
-    "Images/Pasted image 20241024011416.png",
-    "Images/Pasted image 20241024011237.png",
-    "Images/Pasted image 20241024011250.png",
-    "Images/Pasted image 20241024003638.png",
-    "Images/Pasted image 20241024002629.png",
-    "Images/Pasted image 20241024002609.png",
-    "Images/Pasted image 20241024002443.png",
     "React/Passing Children.md",
     "Projects/Calculator.md",
     "React/Todo-App Update.md",

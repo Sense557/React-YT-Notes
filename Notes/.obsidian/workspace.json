@@ -21,8 +21,54 @@
               "icon": "lucide-file",
               "title": "Managing State"
             }
+          },
+          {
+            "id": "51a5668d0fa29781",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/State vs Props.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "State vs Props"
+            }
+          },
+          {
+            "id": "5043c031702005cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Calculator Project Update.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Calculator Project Update"
+            }
+          },
+          {
+            "id": "c9ba8606c0142d4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Todo App Update.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Todo App Update"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -165,26 +211,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ebbe4c086c2207d8",
+  "active": "c9ba8606c0142d4f",
   "lastOpenFiles": [
-    "Images/Pasted image 20241026083441.png",
-    "Images/Pasted image 20241026012014.png",
-    "Images/Pasted image 20241026005835.png",
-    "Images/Pasted image 20241026004256.png",
-    "Images/Pasted image 20241026003539.png",
-    "Images/Pasted image 20241026003255.png",
-    "Images/Pasted image 20241026001905.png",
-    "Images/Pasted image 20241025232128.png",
-    "Images/Pasted image 20241025225507.png",
-    "Images/Pasted image 20241025225334.png",
-    "Images/Pasted image 20241025225246.png",
-    "React/Passing Functions via Props.md",
+    "Images/Pasted image 20241026210913.png",
+    "Images/Pasted image 20241026210723.png",
+    "Images/Pasted image 20241026204807.png",
+    "Images/Pasted image 20241026201944.png",
+    "Images/Pasted image 20241026200610.png",
+    "Images/Pasted image 20241026200551.png",
+    "Images/Pasted image 20241026195954.png",
+    "Images/Pasted image 20241026194617.png",
+    "Images/Pasted image 20241026182839.png",
+    "Images/Pasted image 20241026180910.png",
+    "Images/Pasted image 20241026175236.png",
+    "React/Todo-App Update.md",
+    "Projects/Todo App Update.md",
+    "Projects/Todo App.md",
+    "Projects/Calculator Project Update.md",
     "React/Managing State.md",
+    "React/State vs Props.md",
+    "Projects/Calculator.md",
+    "React/Passing Functions via Props.md",
     "React/Handling Events.md",
     "React/Passing Children.md",
-    "Projects/Calculator.md",
-    "React/Todo-App Update.md",
-    "Projects/Todo App.md",
     "Projects/Clock.md",
     "React/Passing Data via Props.md",
     "React/CSS Modules.md",

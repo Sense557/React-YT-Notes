@@ -2,6 +2,8 @@
 ![[Pasted image 20241024094445.png]]
 
 
+
+
 1. **State** represents ***data that changes*** over time
 2. **State** is ***local*** and ***private*** to the component
 3. **State** changes cause the component to **re-render**
@@ -662,3 +664,163 @@ function App() {
 export default App;
 ```
 
+
+
+Now there is a task i.e. we need to change the background of the selected items 
+How can we do ?
+We need to do some changes inside the `Item.jsx` 
+Let's do some changes
+
+
+
+
+> [!NOTE] Old Code
+```JSX
+import styles from "./Item.module.css";
+const Item = ({ foodItem, handleBuyButton }) => {
+
+  const handleBuyButtonClicked = (event) => {
+    console.log(event)
+    console.log (`${foodItem} is bought`)
+  }
+
+  return (
+    <li className={`${styles["kg-item"]} list-group-item`}>
+      <span className={styles["kg-span"]}>{foodItem}</span>
+      <button
+        className={`${styles.button} btn btn-info`}
+        onClick={handleBuyButton}
+      >
+        Buy
+      </button>
+    </li>
+  );
+};
+  
+export default Item;
+```
+
+
+
+
+> [!NOTE] New Code
+```JSX
+import styles from "./Item.module.css";
+const Item = ({ foodItem, bought, handleBuyButton }) => {
+
+  const handleBuyButtonClicked = (event) => {
+    console.log(event)
+    console.log (`${foodItem} is bought`)
+  }
+
+  return (
+    <li className={`${styles["kg-item"]} list-group-item`}>
+      <span className={styles["kg-span"]}>{foodItem}</span>
+      <button
+        className={`${styles.button} btn btn-info`}
+        onClick={handleBuyButton}
+      >
+        Buy
+      </button>
+    </li>
+  );
+};
+  
+export default Item;
+```
+
+
+
+We need to do some changes inside the `FoodItems.jsx` 
+
+
+> [!NOTE] Old
+```JSX
+import Item from "./Item";
+
+const FoodItems = ({ items }) => {
+
+  return (
+    <ul className="list-group">
+      {items.map((item) => (
+        <Item 
+        key={item} 
+        foodItem = {item}
+        ></Item>
+      ))}
+    </ul>
+  );
+};
+
+export default FoodItems;
+```
+
+
+
+> [!NOTE] New
+```JSX
+import Item from "./Item";
+
+const FoodItems = ({ items }) => {
+
+  return (
+    <ul className="list-group">
+      {items.map((item) => (
+        <Item
+        key={item}
+        foodItem = {item}
+        bought = {true}
+        handleBuyButton={()=> console.log(`${item} bought`)}
+        ></Item>
+      ))}
+    </ul>
+  );
+};
+
+export default FoodItems;
+```
+
+
+
+![[Pasted image 20241026101135.png]]
+
+
+
+Now the problem we don't want everything to be selected 
+So we need to write some logic that will decide which items should have the changed background color or not
+
+Let's do some changes inside `FoodItems.jsx`
+```JSX
+import { useState } from "react";
+import Item from "./Item";
+
+const FoodItems = ({ items }) => {
+  let [activeItems, setActiveItems] = useState([]);
+  
+  let onBuyButton = (item, event) => {
+    let newItems = [...activeItems, item];
+    setActiveItems (newItems);
+  }
+
+  return (
+    <ul className="list-group">
+      {items.map((item) => (
+        <Item
+        key={item}
+        foodItem = {item}
+        bought = {activeItems.includes(item)}
+        handleBuyButton={(event)=> onBuyButton(item, event)}
+        ></Item>
+      ))}
+    </ul>
+  );
+};
+
+export default FoodItems;
+```
+
+
+
+
+
+![[Pasted image 20241026103206.png]]
